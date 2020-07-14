@@ -1,0 +1,36 @@
+RewriteEngine On
+
+RewriteRule ^login/?$ src/app/auth/login.php
+RewriteRule ^register/?$ src/app/auth/register.php
+RewriteRule ^panel/?$ src/app/dashboard/index.php
+RewriteRule ^negocio/colaboradores/?$ src/app/dashboard/colaboradores.php
+RewriteRule ^aplicaciones/?$ src/app/dashboard/aplicaciones.php
+RewriteRule ^vista/?$ src/app/dashboard/vista.php
+
+
+
+RewriteRule ^inventario/?$ src/app/dashboard/inventario.php
+RewriteRule ^nuevo/servicio/?$ src/app/dashboard/nuevoServ.php
+RewriteRule ^instalar-negocio/?$ src/app/dashboard/instalar-negocio.php
+
+RewriteRule ^inventario/productos/?$ src/app/dashboard/productos.php
+RewriteRule ^seleccion/?$ src/app/dashboard/seleccion.php
+RewriteRule ^admin/?$ src/app/admin/index.php
+RewriteRule ^minegocio/informacion?$ src/app/dashboard/info.php
+
+
+RewriteRule ^reservas/?$ src/app/dashboard/reservaciones.php
+RewriteRule ^clientes/?$ src/app/dashboard/clientes.php
+RewriteRule ^ventas/?$ src/app/dashboard/ventas.php
+RewriteRule ^ventas/facturas/?$ src/app/dashboard/facturas.php
+RewriteRule ^minegocio/?$ src/app/frontend/index.php
+RewriteRule ^reservar/?$ src/app/frontend/booking/index.php
+RewriteRule ^confirmar/?$ src/app/frontend/booking/confirmar.php
+
+RewriteRule ^ajustes/?$ src/app/dashboard/ajustes.php
+RewriteRule ^herramientas/?$ src/app/dashboard/integraciones.php
+RewriteRule ^cerrar/?$ src/app/logout.php
+
+RewriteRule ^guardar-servicio?$ src/config/guardar.php
+RewriteRule ^guardar-categoria/?$ src/config/guardar-categoria.php
+RewriteRule ^api/?$ src/config/mostrar.php
